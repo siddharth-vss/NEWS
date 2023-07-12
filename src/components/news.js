@@ -32,7 +32,7 @@ export default class News extends Component {
 
                     <br />      
                 <br />
-                <div className="row">
+                <div className="row text-center">
                    
                         {this.state.articles.map((e) => {
                             return                         <div className="col md-4" key={e.url}>

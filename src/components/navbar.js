@@ -7,7 +7,7 @@ export default function Navbar(props) {
     <>
      <nav className={`navbar navbar-${props.mode} bg-${props.mode} fixed-top`}>
    <div className="container-fluid">
-       <img src="https://spgaming2056.w3spaces.com/favicon_io/android-chrome-192x192.png" alt="sp" id="SP" />
+       <img src="../SP.jpg" alt="sp" id="SP" />
        <a className="navbar-brand " href="/">NEWS</a>
 
 
