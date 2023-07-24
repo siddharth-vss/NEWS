@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import logo from '../SP.jpg'
 
 
 export default function Navbar(props) {
@@ -7,7 +8,7 @@ export default function Navbar(props) {
     <>
      <nav className={`navbar navbar-${props.mode} bg-${props.mode} fixed-top`}>
    <div className="container-fluid">
-       <img src="../SP.jpg" alt="sp" id="SP" />
+       <img src={logo} alt="sp" id="SP" />
        <a className="navbar-brand " href="/">NEWS</a>
 
 
@@ -20,42 +21,18 @@ export default function Navbar(props) {
                <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
            </div>
            <div className="offcanvas-body">
-               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-                   <li className="nav-item">
-                       <a className="nav-link active"  href="https://spgaming2056.w3spaces.com/cheatsheet.html" >CHEATSHEET</a>
-                   </li>
-                   
-
-                   <li className="nav-item">
-                       <a className="nav-link active" href="/">HOME</a>
-                   </li>
-                   {/* <li className="nav-item dropdown">
-                       <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                           Dropdown
-                       </a>
-                       <ul className="dropdown-menu dropdown-menu-dark">
-                           <li><a className="dropdown-item" href="/">Action</a></li>
-                           <li><a className="dropdown-item" href="/">Another action</a></li>
-                           <li>
-                               <hr className="dropdown-divider" />
-                           </li>
-                           <li><a className="dropdown-item" href="/">Something else here</a></li>
-                       </ul>
-                   </li> */}
-                   {/* <div className="form-check form-switch">
-  <input className="form-check-input" type="checkbox" onClick={props.toggleMode} role="switch" id="flexSwitchCheckDefault" />
-  <label className="form-check-label" htmlFor="flexSwitchCheckDefault">DARK MODE</label>
-</div>
-                   <div className="form-check form-switch">
-  <input className="form-check-input" type="checkbox" onClick={props.toggleMode2} role="switch" id="flexSwitchCheckDefault" />
-  <label className="form-check-label" htmlFor="flexSwitchCheckDefault">PRIMARY MODE </label>
-</div>
-                   <div className="form-check form-switch">
-  <input className="form-check-input" type="checkbox" onClick={props.toggleMode1} role="switch" id="flexSwitchCheckDefault"  checked />
-  <label className="form-check-label" htmlFor="flexSwitchCheckDefault">light MODE </label>
-</div> */}
-               
-               </ul>
+           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                           
+                           
+                            <li className="nav-item"><a  className="nav-link"  href="#1">HOME</a></li>
+                            <li className="nav-item"><a  className="nav-link"  href="#Business">Business</a></li>
+                            <li className="nav-item"><a  className="nav-link"  href="#Entertainment">Entertainment</a></li>
+                            <li className="nav-item"><a  className="nav-link"  href="#General">General</a></li>
+                            <li className="nav-item"><a  className="nav-link"  href="#Health">Health</a></li>
+                            <li className="nav-item"><a  className="nav-link"  href="#Science">Science</a></li>
+                            <li className="nav-item"><a  className="nav-link"  href="#Sports">Sports</a></li>
+                            <li className="nav-item"><a  className="nav-link"  href="#Technology">Technology</a></li>
+                        </ul>
                <ul className="nav-item"> <button className="rounded-circle border border-5  me-2 bg-primary wh"   onClick={props.toggleMode11} ></button>
 <button className="rounded-circle border border-5  me-2 bg-secondary wh" onClick={props.toggleMode22} ></button>
 <button className="rounded-circle border border-5  me-2 bg-success wh"   onClick={props.toggleMode33} ></button></ul><ul>
