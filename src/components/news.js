@@ -2,6 +2,7 @@ import React from 'react'
 import { useState,useCallback,useEffect} from 'react';
 // import PropTypes from 'prop-types';
 import Newsitems from './newsitems';
+import '../App.css'
 
  const News =(props)=> {
 
@@ -35,7 +36,7 @@ import Newsitems from './newsitems';
                 <div className="row text-center">
                    
                         {articles.map((e) => {
-                            return                         <div className="col mx-3 md-4" key={e.url}>
+                            return                         <div className="col mx-4 md-4" key={e.url}>
                                 <Newsitems 
                                 mode={props.mode}
                                  title={e.title ? e.title : ""} 

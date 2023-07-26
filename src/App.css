@@ -41,6 +41,16 @@
   }
 }
 
+
+.newscard{
+  margin: 16px;
+  padding: 12;
+  width: 343px;
+  height: 552px;
+
+
+}
+
 #SP{
   width: 35px;
   height: 35px;

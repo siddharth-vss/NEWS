@@ -24,14 +24,14 @@ export default function Bussiness(props) {
     }, [])
   
     return (
-            <div className="container my-3">   
+            <>   
               <h1 className="text-center" style={{ margin: '35px 0px', marginTop: '90px' }} id='Bussiness'>NewsMonkey - Top Bussiness  Headlines</h1>
                    <br />      
                 <br />
                 <div className="row text-center">
                    
                         {articles.map((e) => {
-                            return                      <div className="col mx-3 md-4" key={e.url}>
+                            return                      <div className="col mx-4 md-4" key={e.url}>
                             <Newsitems 
                             mode={props.mode}
                              title={e.title ? e.title : ""} 
@@ -47,7 +47,7 @@ export default function Bussiness(props) {
     
                         })}                 
                 </div>
-            </div>
+            </>
         )
     }
 
